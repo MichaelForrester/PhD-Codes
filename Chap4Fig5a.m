@@ -1,7 +1,13 @@
 function Jaccard=JansenRit(C,P)
 
-% Function to calculate the Jaccard coefficient for the SC matrix C and the FC matrix resulting from the MPC between each node's timeseries (transformed by the Hilbert function). Timeseries dynamics are governed by the Jansen-Rit model with parameters P.
+%Function to calculate the Jaccard coefficient for the SC matrix C and the FC matrix
+%resulting from the MPC between each node's timeseries (transformed by the Hilbert function).
+%Timeseries dynamics are governed by the Jansen-Rit model with parameters P.
 
+% Inputs: C - Connectivity matrix where C(i,j) is coupling strength from node j -> i.
+%         P - Structure containing Jansen-Rit paramteters.
+% Output: Jaccard - Jaccard coefficient between SC and simulated FC.
+.
 N=length(C); % Number of nodes.
 
 % Setting time increments.
