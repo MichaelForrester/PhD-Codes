@@ -53,7 +53,7 @@ for j = 1:N
         ysave(:,j+1)=y1-y2;
 end
 
-ysave(:,100000:end); % Removing inital transients.
+ysave(:,1:100000)=[]; % Removing inital transients.
 U_trans = angle(hilbert(ysave')); % Implementing Hilbert tranform.
 FC = zeros(N); % Preallocating FC.
 
