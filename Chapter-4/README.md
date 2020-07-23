@@ -9,4 +9,6 @@
 - Idash.m: Computes first derivative of phase interaction function at global synchrony
 - I_Jac.m: Jacobian for phase interaction function.
 - LargestEigenvalue.m: Computes largest eigenvalue of phase interaction function's Jacobian at phase-locked state.
+- WeakCoup.m: RHS of weakly-coupled reduction.
 - FC.m: Computes FC matrices for both the Jansen-Rit system and its weakly-coupled reduction.
+- JansenRit.ode: ODE system for XPPAUT bifurcation continuation.
