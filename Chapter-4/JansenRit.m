@@ -2,6 +2,10 @@
 
 function dydt=JansenRit(t,y,P,C,N)
     
+    % P: Structure containing parameters
+    % C: Structural connectivity matrix
+    % N: Number of nodes
+    
     y0=y(1:N);
     y1=y(N+1:2*N);
     y2=y(2*N+1:3*N);
